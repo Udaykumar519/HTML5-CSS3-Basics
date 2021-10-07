@@ -1,12 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Forms</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- bootstrap reference -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF"
+      crossorigin="anonymous"
+    />
+    <!-- bootstrap reference -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ"
+      crossorigin="anonymous"
+    ></script>
+    <title>HTML Forms</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>User Form Controls</h1>
+      <form>
+        <!-- labels for static data -->
+        <!-- type is type of data, value is predefined data -->
+        <!-- No need for in label and id in input tags -->
+        <label for="">First Name</label>
+        <input
+          class="form-control w-50"
+          type="text"
+          name="fname"
+          value="john"
+        />
+        <label for="">Last Name</label>
+        <input
+          class="form-control w-50"
+          type="text"
+          name="lname"
+          value="Galt"
+        />
+        <label for="">Password</label>
+        <input class="form-control w-50" type="password" name="pword" />
+        <label for="">confirm Password</label>
+        <input class="form-control w-50" type="password" name="pword" />
+        <label for="">Comments</label>
+        <!-- To add comments(multi-line) -->
+        <!-- textarea is space sensitive -->
+        <textarea class="form-control w-50" rows="2" cols="5"></textarea>
+        <br /><br />
+        <label for="">Select all that apply</label><br />
+        <input type="checkbox" class="form-check-input" />Maths
+        <input type="checkbox" class="form-check-input" />Physics
+        <input type="checkbox" class="form-check-input" />Chemistry
+        <br /><br /><br />
+        <label for="">Select Country</label><br />
+        <!-- <input type="radio" name="bharat" id="" value="Bharat">Bharat
+        <input type="radio" name="japan" id="" value="Japan">Japan
+        <input type="radio" name="australia" id="" value="Australia">Australia -->
+        <!-- To clear confusion among radio buttons -->
+        <input type="radio" name="country" id="" value="1" />Bharat
+        <input type="radio" name="country" id="" value="2" />Japan
+        <input type="radio" name="country" id="" value="3" />Australia
+        <br /><br />
+        <!-- For select box -->
+        <label for="">Select Device</label><br />
+        <select class="form-select w-50" name="" id="">
+          <option value="">select</option>
+          <option value="1">desktop</option>
+          <option value="2">mobile</option>
+          <option value="3">laptop</option>
+        </select>
+        <label for="">Select State</label><br />
+        <select class="form-select w-50" name="" id="">
+          <option value="">select</option>
+          <option value="1">desktop</option>
+          <option value="2">mobile</option>
+          <option value="3">laptop</option>
+        </select>
+        <label for="">Select States</label><br />
+        <select class="form-select w-50" name="" id="" multiple>
+          <option value="">select</option>
+          <option value="1">bangalore</option>
+          <option value="2">chennai</option>
+          <option value="3">hyderabad</option></select
+        ><br /><br />
+        <label for="">Select file</label>
+        <input
+          type="file"
+          name=""
+          id=""
+          class="form-control w-50"
+          accept="application/pdf"
+        />
+        <br /><br />
+        <!-- We can also use image as a button -->
+        <input type="button" value="delete" class="btn btn-danger" />
+        <!-- If type is submit, page refreshes, this means data sent to server -->
+        <!-- Can also avoid refresh using JS but know that data is sent to server if type is submit -->
+        <input type="submit" value="submit" class="btn btn-primary" />
+        <input type="reset" value="update" class="btn btn-warning" />
+      </form>
+    </div>
+  </body>
 </html>
