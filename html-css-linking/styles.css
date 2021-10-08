@@ -1,0 +1,7 @@
+/* imported styles from another CSS file */
+@import url(./home.css);
+/* This overrides color  */
+h1{
+    color: white;
+    background-color: teal;
+}

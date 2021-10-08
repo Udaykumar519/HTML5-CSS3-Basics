@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Block Level Elements</title>
+    <style>
+        .block-level{
+            background-color: blue;
+        }
+        label,button{
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+<!-- Here, body is the parent -->
+<body>
+    <div class="block-level">This is a division which is block level element</div>
+    <!-- Here, paragraph started in next line -->
+    <p class="block-level">This is paragraph</p>
+    <label for="" class="inline">Hello</label>
+    <!-- Here, button is inline element -->
+    <button class="inline">Click me</button> 
+    <p>
+        <label for="This is inline within block level"></label>
+    </p>
+    <!-- Not a good practice -->
+    <label for="">
+        <p>This is block level within inline</p>
+    </label>
+    <!-- Don't add headers inside p tag, something will not work ex:background colors will not apply -->
+    <!-- This is invalid markup -->
+    <p>
+        <!-- These two will seperated -->
+        This is para
+        <h1>I am Header</h1>
+    </p>
+    <!-- When the page is loaded, Browser will create DOM of document i.e elements section while we inspect  -->
+    <!-- JS plays with DOM which is created by browser when the document is loaded -->
+
+</body>
+</html>

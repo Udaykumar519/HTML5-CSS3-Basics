@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>adjacent sibling</title>
+    <style>
+        /* adjacent-sibling means Immediately following p of div*/
+        div+p{
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>Paragraph1 in div</p>
+        <p>Paragraph2 in div</p>
+        <p>Paragraph3 in div</p>
+    </div>
+    <p>Paragraph4</p>
+    <p>Paragraph5</p>
+</body>
+</html>
